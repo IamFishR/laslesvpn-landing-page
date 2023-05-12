@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        font-family: 'Rubik', sans-serif;
+    }
+
+    body {
+        color: #4F5665;
+    }
+
+    .link {
+        @apply text-gray-500 hover:text-gray-900;
+    }
+    .link.active {
+        @apply font-medium text-gray-900;
+    }
+
+    .two-col {
+        @apply grid grid-cols-2 gap-4;
+    }
+
+    .two-col > * {
+        @apply col-span-2 md:col-span-1;
+    }
+
+    .two-col.center-aligned {
+        @apply place-items-center;
+    }
+
+    .btn {
+        @apply rounded-md transition duration-200 ease-in-out relative;
+    }
+
+    .btn.btn-red {
+        @apply bg-red-500 hover:bg-red-600 text-white;
+    }
+    .btn.btn-lg {
+        @apply px-20 py-4 font-medium shadow-lg;
+    }
+
+    .btn.btn-red::after {
+        @apply absolute bottom-0 w-3/5 h-8 blur-lg rounded-md bg-red-400 -z-10;
+        content: '';
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
