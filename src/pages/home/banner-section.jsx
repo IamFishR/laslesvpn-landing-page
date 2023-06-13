@@ -14,7 +14,7 @@ const BannerSection = (props) => {
                         Provide a network for all your needs with ease and fun using <br className="hidden md:block" />
                         <span className="font-medium">LaslesVPN</span> discover interesting features from us.
                     </p>
-                    <a href="#" className="btn btn-red btn-lg">Get Started</a>
+                    <a href="#" className="btn btn-primary px-20 active rounded-md">Get Started</a>
                 </div>
                 <div>
                     <img src={banner_image} alt="banner" className="banner-image" />
